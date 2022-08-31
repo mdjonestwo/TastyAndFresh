@@ -38,24 +38,28 @@ p{
     padding: 0 25px;
 }
 
-.nav-right a{
+.nav-left a{
     color: #fff;
     text-decoration: none;
 }
 
-.nav-left a{
+.nav-right a{
     text-decoration: none;
     color: #fff;
     margin: 0 5px;
 }
 
-.nav-left a:hover{
+.nav-right a:hover{
     color: #ba9c6d
 }
 
+.mobile-nav{ 
+    display: none;
+}
 
-
-
+.mobile-icon{
+    display: none;
+}
 .jumbo{
     background-image: url("/assets/pexelsphoto213621.png");
     height: 90vh;
@@ -358,7 +362,7 @@ p{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-right: #fff 2px solid ;
+    border-right: #fff 1px solid ;
     margin: 0 75px;
     padding-right: 45px;
     text-align: left;
@@ -376,3 +380,332 @@ p{
 .footer a:hover{
     color: #ba9c6d;
 }
+
+@media (min-width: 721px) and (max-width: 1040px) { 
+
+    .about-us{
+        padding: 100px 25px;
+    }
+
+    .promo{ 
+        padding: 50px 25px;
+    }
+
+    .promo .col-2 .image {
+        width: 500px;
+    }
+ 
+}
+
+@media (min-width: 540px) and (max-width: 720px) { 
+    .about-us{
+    }
+    
+    .about-us-title{
+        width: 400px;
+    }
+
+    .about-us-contents{
+        padding: 50px 25px;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .about-us-contents .col-1{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .about-us-contents .col-2{
+        width: 100%;
+    }
+
+    .about-us-contents .col-2 p{
+        margin-bottom: 50px;
+    }
+
+    .shop{
+        height: 90vh;
+    }
+
+    .shop .text{
+        width: 400px;
+    }
+
+    .promo {
+        flex-direction: column;
+        padding: 50px 25px;
+    }
+
+    .promo .col-1 {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .promo .col-2 .image {
+        width: 500px;
+    }
+
+
+    .promo .col-2 {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .promo .col-2 .image {
+        width: 500px;
+    }
+
+    .footer .col{
+        margin: 0 25px;
+    }    
+
+}
+
+@media (min-width: 1px) and (max-width: 575px) { 
+
+    h1{
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    
+    p{ 
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .about-us{
+        padding: 50px 25px;
+    }
+    .about-us-title{
+        width: 300px;
+    }
+
+    .about-us-contents{
+      align-items: center;
+      flex-direction: column;
+    }
+
+
+    .about-us-contents .col-1{
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .about-us-contents .col-1 .image{
+        width: 300px;
+        height: 500px;
+    }
+
+    .about-us-contents .col-2{
+        width: 100%;
+    }
+
+    .about-us-contents .col-2 p{
+        margin-bottom: 50px;
+    }
+
+    .about-us-title h2{
+        font-size: 20px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+
+    .menu .col-1{
+        width: 100%;
+        height: 400px;
+    }
+    .menu .col-2{
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+
+    }
+
+    .menu .col-3{
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .shop{
+        height: 60vh;
+    }
+
+    .shop .text{
+        width: 300px;
+    }
+
+    .promo {
+        flex-direction: column;
+        padding: 50px 25px;
+    }
+
+    .promo .col-1 {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .promo .col-1 .image{
+        height: 450px;
+        width: 350px;
+    }
+
+    .promo .col-2 .image {
+        width: 350px;
+    }
+
+
+    .promo .col-2 {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+
+
+    .hours {
+        flex-direction: column;
+    }
+
+    .hours .col-1{
+        width: 100%;
+        height: 500px;
+    }
+    .hours .col-2{
+        width: 100%;
+        height: 500px;
+        padding: 0px;
+
+    }
+
+    .hours .col-3{
+        width: 100%;
+        height: 500px;
+
+    }
+
+    .footer{
+        padding: 25px 20px;
+    }
+
+    .footer .col{
+        margin: 0px 25px 0 auto;
+        padding-right: 10px;
+        width: -moz-available;
+    }    
+
+    .footer a{
+        font-size: 14px;
+        color: #fff;
+    }
+
+}
+@media (min-width: 1px) and (max-width: 992px) { 
+
+ 
+
+    .nav-right{
+        display: none;
+    }
+
+    .mobile-icon {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+        font-size: 40px;
+        padding-right: 15px;
+    }
+
+    .mobile-nav{
+        position:relative;animation:
+        animateright 0.4s;
+    }
+
+    @keyframes animateright{
+       from{right:-300px;opacity:0} 
+          to{right:0;opacity:1}
+    }
+    
+    .mobile-nav {
+        height: 100vh;
+        width: 50%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 20;
+        display: none;
+        background-color: rgb(47, 47, 47);
+    }
+
+    .mobile-items{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 50px;
+        align-items: center;
+
+    }
+
+    .mobile-items h2{
+        font-size: 46px;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        width: 300px;
+        text-align: center;
+    }
+
+
+    .mobile-list ul{ 
+        padding: 0;
+        text-align: center;
+    }
+
+    .mobile-list li{ 
+        list-style: none;
+        font-size: 46px;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .mobile-list a:hover{ 
+     color: #ba9c6d;
+    }
+
+    .mobile-list li a{ 
+        color: #ffffff;
+        text-decoration: none;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .mobile-close {
+        padding: 0px 20px;
+        cursor: pointer;
+        font-size: 48px;
+        color: #ffffff;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+ }
