@@ -12,6 +12,10 @@ h1{
     font-size: 6rem;
 }
 h2 {
+    font-size: 3rem;
+}
+
+h3{
     font-size: 2rem;
 }
 h4{
@@ -20,7 +24,38 @@ h4{
 
 p{ 
     font-size: 17px;
+    font-weight: 400;
 }
+
+.navbar{
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    color: #fff;
+    padding: 0 25px;
+}
+
+.nav-right a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-left a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.nav-left a:hover{
+    color: #ba9c6d
+}
+
+
+
+
 .jumbo{
     background-image: url("/assets/pexelsphoto213621.png");
     height: 90vh;
@@ -41,7 +76,7 @@ p{
 
 .overlay{
     background-color: #a9a9a9;
-    height: 95vh;
+    height: 90vh;
     width: 100%;
     position: absolute;
     opacity: 15%;
@@ -69,28 +104,34 @@ p{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 700px;
+    width: 900px;
 }
 
 .about-us-title h2 {
     font-weight: 400;
     margin-bottom: 25px;
+    font-size: 2.25rem;
 }
 .about-us-contents{
     display: flex;
-    align-items: end;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .about-us-contents .col-1{
-    padding: 25px 50px;
+    width: 50%;
 }
-.about-us-contents .col-1 img{
+
+.about-us-contents .col-1 .image{
     width: 400px;
     height: 700px;
+    background-image: url("/assets/choc-rasberry-cake.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .about-us-contents .col-2{
-    padding: 25px ;
     display: flex;
     flex-direction: column;
     width:  50%;
@@ -100,7 +141,238 @@ p{
     margin-bottom: 100px;
 }
 
-.about-us-contents .col-2 img{
+.about-us-contents .col-2 .image{
     width: auto;
     height: 300px;
+    background-image: url("/assets/coffee-parfait.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.menu .col-1{ 
+    background-position: center;
+    background-size: cover;
+    background-image: url("/assets/coffee-by-window.jpg");
+    height: 700px;
+    width: 33%;
+
+}
+
+
+.menu .col-2{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 33%;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.menu .col-2 h2{
+    margin-bottom: 20px;
+    font-weight: 400;
+} 
+
+.grey-txt{
+    color: #a9a9a9;
+    font-style: italic;
+}
+
+.menu .col-2 p{
+    margin-bottom: 20px;
+} 
+
+.button {
+    padding: 15px 30px;
+    background-color: #dfcbab;
+    text-decoration: none;
+    text-align: center;
+    color: #000 !important;
+}
+
+.button:hover{
+    background-color: #ba9c6d;
+}
+
+.menu .col-3{ 
+    background-position: center;
+    background-size: cover;
+    background-image: url("/assets/cupcakes.jpg");
+    height: 700px;
+    width: 33%;
+}
+
+.shop{
+    background-image: url("/assets/espresso-machine.jpg");
+    background-size: cover;
+    background-position: 25% 75%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.shop .text{
+    width: 650px;
+    margin-left: 15%;
+    color: #fff;
+}
+
+.shop .text p{
+    margin-bottom: 25px;
+}
+
+.shop .text .button{
+    margin-top: 50px;
+}
+
+.promo{
+    padding: 50px 200px;
+    background-color: #DFCBAB;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.promo p{
+    font-weight: 300;
+}
+
+.promo .col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin: 0 15px;
+}
+
+.promo .col-1 .image{
+    height: 450px;
+    width: 400px;
+    background-image: url("/assets/macaroons.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+.promo .col-2 {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 15px;
+}
+
+.promo .col-2 p{
+    margin-bottom: 25px;
+}
+
+.promo .col-2 .image{
+    height: 300px;
+    width: 600px;
+    background-image: url("/assets/whole-cake.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hours{
+    display: flex;
+    flex-direction: row;
+}
+
+.hours .col-1{ 
+    background-position: center;
+    background-size: cover;
+    background-image: url("/assets/pastry-display.jpg");
+    height: 700px;
+    width: 33%;
+
+}
+
+
+.hours .col-2{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 33%;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.hours .col-2 .address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-bottom: 20px;   
+}
+
+.hours .col-2 h2{
+    margin-bottom: 20px;
+    font-weight: 400;
+} 
+
+.hours .col-2 .hours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    margin-bottom: 20px;  
+}
+
+
+.hours .col-2 p{
+    margin-bottom: 5px;
+} 
+
+
+.hours .col-3{ 
+    background-position: center;
+    background-size: cover;
+    background-image: url("/assets/coffee-n-cake.jpg");
+    height: 700px;
+    width: 33%;
+}
+
+.footer{
+    height:100px;
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    padding: 50px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .col{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-right: #fff 2px solid ;
+    margin: 0 75px;
+    padding-right: 45px;
+    text-align: left;
+    width: 250px;
+    height: 80px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+
+}
+
+.footer a:hover{
+    color: #ba9c6d;
 }
